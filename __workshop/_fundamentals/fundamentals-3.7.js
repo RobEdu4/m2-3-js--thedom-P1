@@ -12,8 +12,17 @@
 // example: repeat(['foo', 3]) returns 'foofoofoo'
 
 function repeat(arr) {
-  // Your code here
+  if (arr[1] < 1) return "";
+  if (typeof arr[0] !== "string" || isNaN(arr[1])) return undefined;
+
+  let newString = "";
+  for (var i = 0; i < arr[1]; i++) {
+    newString += arr[0];
+  }
+  return newString;
 }
+
+console.log(repeat([3, 3]));
 
 // Part 2 - Test
 // --------------

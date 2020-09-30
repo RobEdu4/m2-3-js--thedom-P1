@@ -9,8 +9,13 @@
 // - If it's a number, return `undefined`
 
 function lastCharacter(str) {
-  // Your code here
+  if (!isNaN(str[str.length - 1])) {
+    return undefined;
+  } else {
+    return str[str.length - 1];
+  }
 }
+console.log(lastCharacter("workb9"));
 
 // Part 2 - Test
 // --------------

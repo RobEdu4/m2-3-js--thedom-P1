@@ -8,9 +8,22 @@
 // - If the array contains any values that are not a number, the function should return undefined.
 
 function sum(arr) {
-  // Your code here
+  /*
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (isNaN(arr[i])) return undefined;
+    total += arr[i];
+  }
+  return total;
 }
+  */
 
+  let total = 0;
+  arr.forEach((num) => (total += num));
+  return total;
+  //GET IIIIIIIIIIIITTTTTTTTTTTTT
+}
+console.log(sum([1, 7, 2, 6, 3, 10, 15]));
 // Part 2 - Test
 // --------------
 // Test your function.

@@ -11,9 +11,32 @@
 // `typeof 3` returns 'number'
 
 function sum(arr) {
-  // Your code here
+  if (
+    !Array.isArray(arr) ||
+    arr.length !== 2 ||
+    isNaN(arr[0]) ||
+    isNaN(arr[1])
+  ) {
+    return undefined;
+  }
+  return arr[0] + arr[1];
 }
 
+/*
+switch (arr) {
+  case !Array.isArray(arr):
+    return undefined;
+  case arr.length !== 2:
+    return undefined;
+  case isNaN(arr[0]):
+    return undefined;
+  case isNaN(arr[1]):
+    return undefined;
+  default:
+    return arr[0] + arr[1];
+}
+*/
+console.log(sum([-190, -14]));
 // Part 2 - Test
 // --------------
 // Test your function.

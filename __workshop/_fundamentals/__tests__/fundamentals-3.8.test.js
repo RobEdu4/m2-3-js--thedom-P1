@@ -4,7 +4,8 @@ const reverseIt = require("../fundamentals-3.8");
 // Write 3 more expect functions to test the function you just wrote.
 test("Exercise 8", () => {
   expect(reverseIt("abcdefgh")).toBe("hgfedcba");
-  // add more tests here...
+  expect(reverseIt("helllo")).toBe("ollleh");
+  expect(reverseIt("reversemeplez")).toBe("zelpemesrever");
 });
 
 // More info on jest expect: https://jestjs.io/docs/en/expect

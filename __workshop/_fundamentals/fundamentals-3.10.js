@@ -5,11 +5,17 @@
 // ---------------
 // Write a function that accepts a string and returns that string, capitalized.
 // e.g. f("hello world"); // Hello World
-// e.g. f("BACON BROCOLI"); // Bacon Brocoli
+// e.g. f("BACON BROCCOLI"); // Bacon Broccoli
 
 function makeIntoTitle(sentence) {
-  // Your code here
+  return sentence
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
 }
+console.log(makeIntoTitle("plzcapsthis isitincaps is it in caps ???"));
+
+// return sentence.toUpperCase();
 
 // Part 2 - Test
 // --------------

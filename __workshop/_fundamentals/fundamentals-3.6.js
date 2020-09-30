@@ -18,8 +18,22 @@
 // calculator(["add", 10, 20]); // 30
 
 function calculator(arr) {
-  // Your code here
+  if (isNaN(arr[1] || isNaN(arr[2]))) return undefined;
+
+  switch (arr[0]) {
+    case "add":
+      return arr[1] + arr[2];
+    case "sub":
+      return arr[1] - arr[2];
+    case "mul":
+      return arr[1] * arr[2];
+    case "div":
+      return arr[1] / arr[2];
+    default:
+      return undefined;
+  }
 }
+console.log(calculator(["no", 2, 3]));
 
 // Part 2 - Test
 // --------------

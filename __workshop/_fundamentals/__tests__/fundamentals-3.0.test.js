@@ -10,6 +10,8 @@ test("Exercise 0", function () {
   expect(strLength("")).toBe(undefined);
   expect(strLength(256)).toBe(undefined);
   expect(strLength(["abcdefghijklmnop"])).toBe(undefined);
+  expect(strLength(["112312312312"])).toBe(12);
+  expect(strLength(["^$>,!ç"])).toBe(6);
 });
 
 // Run your test by typing yarn test fundamentals-3.1 in the terminal.

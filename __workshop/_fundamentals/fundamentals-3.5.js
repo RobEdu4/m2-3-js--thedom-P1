@@ -10,8 +10,12 @@
 // - If there is no letter in the provided index, return undefined.
 
 function getLetterAtIndex(str, index) {
-  // Your code here
+  if (!typeof str === "string" || str[index] === " " || !isNaN(str[index]))
+    return undefined;
+  return str[index];
 }
+
+console.log(getLetterAtIndex("wo2d", 0));
 
 // Part 2 - Test
 // --------------

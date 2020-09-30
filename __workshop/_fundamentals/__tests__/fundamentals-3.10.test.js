@@ -6,6 +6,9 @@ test("Exercise 10", () => {
   expect(makeIntoTitle("a bb ccc dddd e ff ggg")).toBe(
     "A Bb Ccc Dddd E Ff Ggg"
   );
+  expect(makeIntoTitle("plzcapsthis isitincaps is it in caps ???")).toBe(
+    "Plzcapsthis Isitincaps Is It In Caps ???"
+  );
   // add more tests here...
 });
 
